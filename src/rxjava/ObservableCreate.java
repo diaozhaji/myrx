@@ -1,7 +1,7 @@
 package rxjava;
 
 // Observable的一个适配器,用于快速创建一个可以发送事件的Observable
-class ObservableCreate<T> extends Observable<T> {
+final class ObservableCreate<T> extends Observable<T> {
     // 事件分发接口
     private final ObservableOnSubscribe<T> source;
 
@@ -10,23 +10,68 @@ class ObservableCreate<T> extends Observable<T> {
     }
 
     @Override
-        // 分发逻辑的具体代码
-    void subscribeActual(Observer<? super T> observer) throws Exception {
+        // 分发逻辑代码
+    void subscribeActual(Observer<? super T> observer) {
         CreateEmitter<T> emitter = new CreateEmitter<>(observer);
-        source.subscribe(emitter);
+        // 将中断器回调给observer
+        observer.onSubscribe(emitter);
+        try {
+            source.subscribe(emitter);
+        } catch (Exception e) {
+            // 异常接收和处理
+            emitter.onError(e);
+        }
     }
 
     // 内部分发器
-    static class CreateEmitter<T> implements Emitter<T> {
+    static class CreateEmitter<T> implements Emitter<T>, Disposable {
         private final Observer<? super T> observer;
 
         CreateEmitter(Observer<? super T> observer) {
             this.observer = observer;
         }
 
-        @Override // 这里只是简单的将observer观察者的事件直接分发出去
-        public void onUpdate(T t) {
-            observer.onUpdate(t);
+        @Override
+        public void onNext(T t) {
+            // 如果事件没被消费,则进行操作
+            if (!isDisposed())
+                observer.onNext(t);
+        }
+
+        @Override
+        public void onError(Throwable e) {
+            if (!isDisposed()) {
+                try {
+                    observer.onError(e);
+                } finally {
+                    // 触发消费,后续不再处理事件
+                    dispose();
+                }
+            }
+        }
+
+        @Override
+        public void onComplete() {
+            if (!isDisposed()) {
+                try {
+                    observer.onComplete();
+                } finally {
+                    // 触发消费,后续不再处理事件
+                    dispose();
+                }
+            }
+        }
+
+        private volatile boolean isDisposed = false;
+
+        @Override
+        public void dispose() {
+            isDisposed = true;
+        }
+
+        @Override
+        public boolean isDisposed() {
+            return isDisposed;
         }
     }
 }
