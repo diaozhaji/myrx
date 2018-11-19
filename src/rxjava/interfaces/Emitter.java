@@ -1,4 +1,4 @@
-package rxjava;
+package rxjava.interfaces;
 
 // 事件分发器接口
 public interface Emitter<T> {

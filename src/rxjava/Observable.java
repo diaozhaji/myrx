@@ -1,5 +1,7 @@
 package rxjava;
 
+import rxjava.interfaces.*;
+
 // 具体的被观察者(主题)
 public abstract class Observable<T> implements ObservableSource<T> {
     // 工厂方法,生产出一个Observable实例
@@ -37,4 +39,10 @@ public abstract class Observable<T> implements ObservableSource<T> {
     public Disposable subscribe(Consumer<? super T> next) {
         return subscribe(next, Functions.emptyConsumer(), Functions.EMPTY_ACTION, Functions.emptyConsumer());
     }
+
+    // map操作符
+    public <R> Observable<R> map(Function<? super T, ? extends R> mapper) {
+        return new ObservableMap<>(this, mapper);
+    }
+
 }

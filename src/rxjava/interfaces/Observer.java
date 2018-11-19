@@ -1,4 +1,4 @@
-package rxjava;
+package rxjava.interfaces;
 
 // 观察者
 public interface Observer<T> {

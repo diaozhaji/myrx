@@ -1,4 +1,4 @@
-package rxjava;
+package rxjava.interfaces;
 
 public interface Disposable {
     void dispose();

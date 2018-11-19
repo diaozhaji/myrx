@@ -1,4 +1,4 @@
-package rxjava;
+package rxjava.interfaces;
 
 // Observable的事件分发接口
 public interface ObservableOnSubscribe<T> {

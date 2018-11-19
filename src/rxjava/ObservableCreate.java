@@ -1,5 +1,10 @@
 package rxjava;
 
+import rxjava.interfaces.Disposable;
+import rxjava.interfaces.Emitter;
+import rxjava.interfaces.ObservableOnSubscribe;
+import rxjava.interfaces.Observer;
+
 // Observable的一个适配器,用于快速创建一个可以发送事件的Observable
 final class ObservableCreate<T> extends Observable<T> {
     // 事件分发接口

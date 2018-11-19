@@ -1,5 +1,10 @@
 package rxjava;
 
+import rxjava.interfaces.Action;
+import rxjava.interfaces.Consumer;
+import rxjava.interfaces.Disposable;
+import rxjava.interfaces.Observer;
+
 public class LambdaObserver<T> implements Observer<T>, Disposable {
     private final Consumer<? super T> onNext;
     private final Consumer<? super Throwable> onError;
