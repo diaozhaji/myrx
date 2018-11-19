@@ -45,4 +45,9 @@ public abstract class Observable<T> implements ObservableSource<T> {
         return new ObservableMap<>(this, mapper);
     }
 
+    // 线程调度操作符
+    public final Observable<T> observeOn(Scheduler scheduler) {
+        return new ObservableObserveOn<>(this, scheduler);
+    }
+
 }

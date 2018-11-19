@@ -6,10 +6,11 @@ import rxjava.interfaces.Observer;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class hellorx {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
 
         try {
@@ -67,6 +68,8 @@ public class hellorx {
 
         mapTest();
 
+        schedulerTest();
+
     }
 
     private static Disposable mDisposable = null;
@@ -112,6 +115,24 @@ public class hellorx {
         })
                 .map(s -> Integer.parseInt(s) * 10)
                 .subscribe(System.out::println);
+    }
+
+    static void schedulerTest() throws InterruptedException {
+        Observable.create((ObservableOnSubscribe<String>) emmit -> {
+            System.out.println("emmit : " + Thread.currentThread().getName());
+            emmit.onNext("1");
+            emmit.onNext("2");
+            emmit.onComplete();
+        })
+                .observeOn(Schedulers.io())
+                .map(it -> {
+                    int r = Integer.parseInt(it) * 10;
+                    System.out.println(r + " : map : " + Thread.currentThread().getName());
+                    return r;
+                }).subscribe(it -> System.out.println(it + " : observer : " + Thread.currentThread().getName()),
+                Functions.emptyConsumer(),
+                () -> System.out.println("onCompleted.... " + Thread.currentThread().getName()));
+        TimeUnit.SECONDS.sleep(1);
     }
 
 

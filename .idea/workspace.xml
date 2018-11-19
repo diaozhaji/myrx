@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2b3212c-fe3a-4476-b844-716e5a91a279" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/rxjava/Action.java" afterPath="$PROJECT_DIR$/src/rxjava/interfaces/Action.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/rxjava/Consumer.java" afterPath="$PROJECT_DIR$/src/rxjava/interfaces/Consumer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/rxjava/Disposable.java" afterPath="$PROJECT_DIR$/src/rxjava/interfaces/Disposable.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/rxjava/Emitter.java" afterPath="$PROJECT_DIR$/src/rxjava/interfaces/Emitter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/rxjava/ObservableOnSubscribe.java" afterPath="$PROJECT_DIR$/src/rxjava/interfaces/ObservableOnSubscribe.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/rxjava/ObservableSource.java" afterPath="$PROJECT_DIR$/src/rxjava/interfaces/ObservableSource.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/rxjava/Observer.java" afterPath="$PROJECT_DIR$/src/rxjava/interfaces/Observer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hellorx.java" afterPath="$PROJECT_DIR$/src/hellorx.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rxjava/Functions.java" afterPath="$PROJECT_DIR$/src/rxjava/Functions.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rxjava/LambdaObserver.java" afterPath="$PROJECT_DIR$/src/rxjava/LambdaObserver.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rxjava/Observable.java" afterPath="$PROJECT_DIR$/src/rxjava/Observable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rxjava/ObservableCreate.java" afterPath="$PROJECT_DIR$/src/rxjava/ObservableCreate.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,13 +16,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="hellorx.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="hellorx.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hellorx.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="112" column="18" lean-forward="false" selection-start-line="112" selection-start-column="18" selection-end-line="112" selection-end-column="18" />
+            <state relative-caret-position="395">
+              <caret line="127" column="28" lean-forward="true" selection-start-line="127" selection-start-column="28" selection-end-line="127" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Schedulers.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/rxjava/Schedulers.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="58" lean-forward="false" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
+              <folding>
+                <element signature="e#123#124#0" expanded="true" />
+                <element signature="e#162#163#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -41,18 +44,46 @@
       <file leaf-file-name="Functions.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/rxjava/Functions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="266">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Function.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/rxjava/interfaces/Function.java">
+      <file leaf-file-name="IOScheduler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/rxjava/IOScheduler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+            <state relative-caret-position="189">
+              <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ObservableObserveOn.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/rxjava/ObservableObserveOn.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="387">
+              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2241#2242#0" expanded="true" />
+                <element signature="e#2280#2281#0" expanded="true" />
+                <element signature="e#2323#2324#0" expanded="true" />
+                <element signature="e#2369#2370#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ObservableSource.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/rxjava/interfaces/ObservableSource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -76,11 +107,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ObservableMap.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ObservableMap.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/rxjava/ObservableMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="30" column="33" lean-forward="true" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+            <state relative-caret-position="227">
+              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,13 +122,15 @@
       <file leaf-file-name="Observable.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/rxjava/Observable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="44" column="26" lean-forward="true" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
+            <state relative-caret-position="802">
+              <caret line="48" column="36" lean-forward="true" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
               <folding>
                 <element signature="e#479#480#0" expanded="true" />
                 <element signature="e#520#521#0" expanded="true" />
                 <element signature="e#1639#1640#0" expanded="true" />
                 <element signature="e#1695#1696#0" expanded="true" />
+                <element signature="e#1775#1776#0" expanded="true" />
+                <element signature="e#1840#1841#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -139,8 +172,12 @@
         <option value="$PROJECT_DIR$/src/rxjava/interfaces/Observer.java" />
         <option value="$PROJECT_DIR$/src/rxjava/interfaces/Function.java" />
         <option value="$PROJECT_DIR$/src/rxjava/BasicObserver.java" />
-        <option value="$PROJECT_DIR$/src/rxjava/Observable.java" />
         <option value="$PROJECT_DIR$/src/rxjava/ObservableMap.java" />
+        <option value="$PROJECT_DIR$/src/rxjava/interfaces/Scheduler.java" />
+        <option value="$PROJECT_DIR$/src/rxjava/IOScheduler.java" />
+        <option value="$PROJECT_DIR$/src/rxjava/ObservableObserveOn.java" />
+        <option value="$PROJECT_DIR$/src/rxjava/Observable.java" />
+        <option value="$PROJECT_DIR$/src/rxjava/Schedulers.java" />
         <option value="$PROJECT_DIR$/src/hellorx.java" />
       </list>
     </option>
@@ -195,6 +232,13 @@
               <item name="myrx" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="rxjava" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myrx" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myrx" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="rxjava" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -336,7 +380,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1478" y="-115" width="1548" height="1053" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -346,7 +389,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -456,6 +499,8 @@
             <element signature="e#520#521#0" expanded="true" />
             <element signature="e#1639#1640#0" expanded="true" />
             <element signature="e#1695#1696#0" expanded="true" />
+            <element signature="e#1775#1776#0" expanded="true" />
+            <element signature="e#1840#1841#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -510,14 +555,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rxjava/interfaces/ObservableSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/rxjava/interfaces/Observer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -542,22 +579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rxjava/interfaces/Function.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rxjava/Functions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/rxjava/BasicObserver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1">
@@ -574,33 +595,102 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hellorx.java">
+    <entry file="file://$PROJECT_DIR$/src/rxjava/interfaces/Function.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="112" column="18" lean-forward="false" selection-start-line="112" selection-start-column="18" selection-end-line="112" selection-end-column="18" />
+        <state relative-caret-position="76">
+          <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rxjava/IOScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rxjava/Observable.java">
+    <entry file="file://$PROJECT_DIR$/src/rxjava/interfaces/ObservableSource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="44" column="26" lean-forward="true" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
-          <folding>
-            <element signature="e#479#480#0" expanded="true" />
-            <element signature="e#520#521#0" expanded="true" />
-            <element signature="e#1639#1640#0" expanded="true" />
-            <element signature="e#1695#1696#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="76">
+          <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/rxjava/ObservableMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="30" column="33" lean-forward="true" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+        <state relative-caret-position="227">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rxjava/ObservableObserveOn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2241#2242#0" expanded="true" />
+            <element signature="e#2280#2281#0" expanded="true" />
+            <element signature="e#2323#2324#0" expanded="true" />
+            <element signature="e#2369#2370#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rxjava/Schedulers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="58" lean-forward="false" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
+          <folding>
+            <element signature="e#123#124#0" expanded="true" />
+            <element signature="e#162#163#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rxjava/interfaces/Scheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rxjava/Functions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rxjava/Observable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="802">
+          <caret line="48" column="36" lean-forward="true" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
+          <folding>
+            <element signature="e#479#480#0" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#1639#1640#0" expanded="true" />
+            <element signature="e#1695#1696#0" expanded="true" />
+            <element signature="e#1775#1776#0" expanded="true" />
+            <element signature="e#1840#1841#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hellorx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="127" column="28" lean-forward="true" selection-start-line="127" selection-start-column="28" selection-end-line="127" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
